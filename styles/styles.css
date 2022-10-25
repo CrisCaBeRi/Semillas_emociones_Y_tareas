@@ -230,7 +230,10 @@
   margin-top: 10px;}
 
 /* Sección cursos */
-
+.courses{
+  width: 100%;
+  background-color: red;
+}
 /* Sección satisfacción por curso */
 
 /* Sección  nivel de emociones*/
@@ -423,7 +426,7 @@
   /* Sección nivel de aprobación con caras */
 
   /* Sección cursos */
-
+  
   /* Sección satisfacción por curso */
 
   /* Sección  nivel de emociones*/
@@ -440,6 +443,22 @@
 
   /* Sección cursos */
 
+  /* Sección satisfacción por curso */
+
+  /* Sección  nivel de emociones*/
+
+  /* Sección comparativa */
+}
+
+@media (min-width: 1024px) {
+  /* Sección Header */
+
+  /* Sección información estudiante */
+
+  /* Sección nivel de aprobación con caras */
+
+  /* Sección cursos */
+  
   /* Sección satisfacción por curso */
 
   /* Sección  nivel de emociones*/
