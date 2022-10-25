@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sección Header */
+
+/* Sección información estudiante */
+
+/* Sección nivel de aprobación con caras */
+
+/* Sección cursos */
+
+/* Sección satisfacción por curso */
+
+/* Sección  nivel de emociones*/
+
+/* Sección comparativa */
+
+@media (max-width: 768px) {
+  /* Sección Header */
+
+  /* Sección información estudiante */
+
+  /* Sección nivel de aprobación con caras */
+
+  /* Sección cursos */
+
+  /* Sección satisfacción por curso */
+
+  /* Sección  nivel de emociones*/
+
+  /* Sección comparativa */
+}
+
+@media (max-width: 425px) {
+  /* Sección Header */
+
+  /* Sección información estudiante */
+
+  /* Sección nivel de aprobación con caras */
+
+  /* Sección cursos */
+
+  /* Sección satisfacción por curso */
+
+  /* Sección  nivel de emociones*/
+
+  /* Sección comparativa */
+}
