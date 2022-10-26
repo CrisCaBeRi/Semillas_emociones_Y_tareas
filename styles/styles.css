@@ -17,6 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   overflow: scroll;
   position: relative;
 }
@@ -99,9 +100,6 @@
   font-family: 'Dosis', sans-serif;
   font-size: 17px;
 }
-
-
-.courses__information--items2{}
 
 
 .courses__information--time{
@@ -214,6 +212,17 @@
   100%{
     width: 85%;
   }
+}
+
+
+.courses__ver{
+  margin: 20px 0;
+}
+
+
+.courses__ver a{
+  font-size: 20px;
+  color: #009458;
 }
 /* Sección satisfacción por curso */
 
