@@ -236,6 +236,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   overflow: scroll;
   position: relative;
 }
@@ -430,6 +431,17 @@
   100%{
     width: 85%;
   }
+}
+
+
+.courses__ver{
+  margin: 20px 0;
+}
+
+
+.courses__ver a{
+  font-size: 20px;
+  color: #009458;
 }
 /* Sección satisfacción por curso */
 
