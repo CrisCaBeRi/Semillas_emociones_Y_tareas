@@ -22,7 +22,7 @@
 
 .courses__container1{
   width: 315px;
-  height: 550px;
+  height: 620px;
   border-radius: 5%;
   box-shadow: -4px 1px 13px 3px gray;
   background-color: white;
@@ -91,6 +91,39 @@
   margin-bottom: 5px;
   font-family: 'Dosis', sans-serif;
   font-size: 17px;
+}
+
+
+.courses__information--barra{
+  margin-top: 10px;
+  position: relative;
+  border: 1px solid #C2C2C2;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #C2C2C2;
+}
+
+
+.courses__information--barra div{
+  width: 0;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #009458;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #009458;
+}
+
+
+.courses__information--mini-barra{
+  animation: biologia-barra 2s forwards;
+}
+
+
+@keyframes biologia-barra{
+  100%{
+    width: 55%;
+  }
 }
 /* Sección satisfacción por curso */
 
