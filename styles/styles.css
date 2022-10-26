@@ -236,12 +236,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: scroll;
+  position: relative;
 }
 
 
-.courses__container1{
+.courses__container{
+  display: flex;
+  animation: cambio 20s infinite;
+}
+
+
+@keyframes cambio{
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+
+  25%{margin-left: -160%;}
+  45%{margin-left: -160%;}
+
+  50%{margin-left: -160%;}
+  70%{margin-left: -160%;}
+
+  75%{margin-left: 160%;}
+  100%{margin-left: 160%;}
+}
+
+
+.courses__container--cosas{
   width: 315px;
   height: 620px;
+  display: inline-block;
+  margin: 0 20px;
+  overflow: hidden;
   border-radius: 5%;
   box-shadow: -4px 1px 13px 3px gray;
   background-color: white;
@@ -337,6 +363,72 @@
 @keyframes biologia-barra{
   100%{
     width: 55%;
+  }
+}
+
+
+.courses__information--barra2{
+  margin-top: 10px;
+  position: relative;
+  border: 1px solid #C2C2C2;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #C2C2C2;
+}
+
+
+.courses__information--barra2 div{
+  width: 0;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #009458;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #009458;
+}
+
+
+.courses__information--mini-barra2{
+  animation: quimica-barra 2s forwards;
+}
+
+
+@keyframes quimica-barra{
+  100%{
+    width: 25%;
+  }
+}
+
+
+.courses__information--barra3{
+  margin-top: 10px;
+  position: relative;
+  border: 1px solid #C2C2C2;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #C2C2C2;
+}
+
+
+.courses__information--barra3 div{
+  width: 0;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #009458;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #009458;
+}
+
+
+.courses__information--mini-barra3{
+  animation: economia-barra 2s forwards;
+}
+
+
+@keyframes economia-barra{
+  100%{
+    width: 85%;
   }
 }
 /* Sección satisfacción por curso */
