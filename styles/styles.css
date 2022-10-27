@@ -581,9 +581,121 @@
   /* Sección nivel de aprobación con caras */
 
   /* Sección cursos */
+  .courses{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+    position: relative;
+  }
   
+  
+  .courses__container{
+    display: flex;
+    animation: cambio 20s infinite;
+  }
+  
+  
+  @keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+  
+    25%{margin-left: -223%;}
+    45%{margin-left: -223%;}
+  
+    50%{margin-left: -223%;}
+    70%{margin-left: -223%;}
+  
+    75%{margin-left: 223%;}
+    100%{margin-left: 223%;}
+  }
   /* Sección satisfacción por curso */
+  .satisfaction__container--title h2{
+    width: 42%;
+    font-size: 22px;
+  }
+  .satisfaction__container--cien{
+    top: 19%;
+    left: 60px;
+    font-size: 20px;
+  }
+  
+  
+  .satisfaction__container--cincuenta{
+    top: 47%;
+    left: 60px;
+    font-size: 20px;
+  }
+  
+  .satisfaction__container--c{
+    top: 85%;
+    left: 60px;
+    font-size: 20px;
+  }
 
+
+  .satisfaction__container--textos{
+    margin-left: 40px;
+  }
+  
+  
+  .satisfaction__container--textos p{
+    margin: 10px;
+    font-size: 17px;
+  }
+
+
+  .satisfaction__container--barra1{
+    margin-left: 18px;
+  }
+
+
+  .satisfaction__container--barra1 div{
+    padding: 42px;
+  }
+
+
+  .satisfaction__container--barra2{
+    margin-left: 18px;
+  }
+
+  
+  .satisfaction__container--barra2 div{
+    padding: 42px;
+  }
+
+
+  .satisfaction__container--barra3{
+    margin-left: 27px;
+  }
+  
+  
+  .satisfaction__container--barra3 div{
+    padding: 42px;
+  }
+
+
+  .satisfaction__container--barra4{
+    margin-left: 18px;
+  }
+  
+  
+  .satisfaction__container--barra4 div{
+    padding: 42px;
+  }
+
+
+  .satisfaction__container--barra5{
+    margin-left: 18px;
+  }
+  
+  
+  .satisfaction__container--barra5 div{
+    padding: 42px;
+  }
   /* Sección  nivel de emociones*/
 
   /* Sección comparativa */
