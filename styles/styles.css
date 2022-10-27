@@ -310,7 +310,7 @@
 
 .satisfaction__container--c{
   position: absolute;
-  top: 89%;
+  top: 85%;
   left: 22px;
   font-family: 'Dosis', sans-serif;
   color: black;
@@ -507,10 +507,71 @@
 /* Sección  nivel de emociones*/
 
 /* Sección comparativa */
+
+
+/*Este es mi corrección a esta resolucion*/
 @media (max-width: 320px){
+  .courses{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+    position: relative;
+  }
+  
+  
+  .courses__container{
+    display: flex;
+    animation: cambio 20s infinite;
+  }
+  
+  
+  @keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+  
+    25%{margin-left: -223%;}
+    45%{margin-left: -223%;}
+  
+    50%{margin-left: -223%;}
+    70%{margin-left: -223%;}
+  
+    75%{margin-left: 223%;}
+    100%{margin-left: 223%;}
+  }
 
+
+  .satisfaction__container--title h2{
+    font-size: 16px;
+  }
+  .satisfaction__container--cien{
+    left: 6px;
+  }
+  
+  
+  .satisfaction__container--cincuenta{
+    left: 6px;
+  }
+  
+  .satisfaction__container--c{
+    top: 85%;
+    left: 6px;
+  }
+
+
+  .satisfaction__container--textos{
+    margin-left: 12px;
+  }
+  
+  
+  .satisfaction__container--textos p{
+    font-size: 10px;
+  }
 }
-
+/*hasta acá*/
 
 @media (max-width: 768px) {
   /* Sección Header */
