@@ -342,7 +342,7 @@
   width: 15%;
   height: 65vh;
   margin-left: 12px;
-  background-color: red;
+  background: linear-gradient(45deg, #009458, #DBDF03, #DF0303);
   position: relative;
 }
 
@@ -372,7 +372,7 @@
   width: 15%;
   height: 65vh;
   margin-left: 12px;
-  background-color: red;
+  background: linear-gradient(45deg, #009458, #DBDF03, #DF0303);
   position: relative;
 }
 
@@ -402,7 +402,7 @@
   width: 15%;
   height: 65vh;
   margin-left: 12px;
-  background-color: red;
+  background: linear-gradient(45deg, #009458, #DBDF03, #DF0303);
   position: relative;
 }
 
@@ -432,7 +432,7 @@
   width: 15%;
   height: 65vh;
   margin-left: 12px;
-  background-color: red;
+  background: linear-gradient(45deg, #009458, #DBDF03, #DF0303);
   position: relative;
 }
 
@@ -462,7 +462,7 @@
   width: 15%;
   height: 65vh;
   margin-left: 12px;
-  background-color: red;
+  background: linear-gradient(45deg, #009458, #DBDF03, #DF0303);
   position: relative;
 }
 
