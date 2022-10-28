@@ -500,7 +500,38 @@
 }
 
 
-.satisfaction__container--textos p{
+.satisfaction__container--biologia{
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+.satisfaction__container--economia{
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 16px;
+}
+
+
+.satisfaction__container--quimica{
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 8px;
+}
+
+
+.satisfaction__container--ecologia{
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 7px;
+}
+
+
+.satisfaction__container--ingieneria{
   font-family: 'Dosis', sans-serif;
   font-size: 12px;
   font-weight: bold;
@@ -570,7 +601,31 @@
   }
   
   
-  .satisfaction__container--textos p{
+  .satisfaction__container--biologia{
+    font-size: 10px;
+    margin: 7px;
+  }
+  
+  
+  .satisfaction__container--economia{
+    font-size: 10px;
+    margin-left: 4px;
+  }
+  
+  
+  .satisfaction__container--quimica{
+    font-size: 10px;
+    margin: 6px;
+  }
+  
+  
+  .satisfaction__container--ecologia{
+    font-size: 10px;
+    margin: 4px;
+  }
+  
+  
+  .satisfaction__container--ingieneria{
     font-size: 10px;
   }
 }
@@ -645,9 +700,36 @@
   }
   
   
-  .satisfaction__container--textos p{
-    margin: 10px;
-    font-size: 17px;
+  .satisfaction__container--biologia{
+    font-size: 20px;
+    margin: 7px;
+  }
+  
+  
+  .satisfaction__container--economia{
+    width: 94px;
+    font-size: 20px;
+    margin-right: 5px;
+    margin-left: 27px;
+  }
+  
+  
+  .satisfaction__container--quimica{
+    font-size: 20px;
+    margin-right: 7px;
+    margin-left: 24px;
+  }
+  
+  
+  .satisfaction__container--ecologia{
+    font-size: 20px;
+    margin-left: 26px;
+  }
+  
+  
+  .satisfaction__container--ingieneria{
+    font-size: 20px;
+    margin-left: 18px;
   }
 
 
