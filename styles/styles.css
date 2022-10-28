@@ -938,3 +938,75 @@
 
   /* Sección comparativa */
 }
+
+
+@media (min-width: 1280px){
+  /* Sección Header */
+
+  /* Sección información estudiante */
+
+  /* Sección nivel de aprobación con caras */
+
+  /* Sección cursos */
+
+  /* Sección satisfacción por curso */
+  .satisfaction__container--title h2{
+    width: 25%;
+  }
+  .satisfaction__container--cien{
+    top: 19%;
+    left: 120px;
+  }
+  
+  
+  .satisfaction__container--cincuenta{
+    top: 45%;
+    left: 120px;
+  }
+  
+  .satisfaction__container--c{
+    top: 84%;
+    left: 120px;
+  }
+
+
+  .satisfaction__container--textos{
+    margin-left: 40px;
+  }
+  
+  
+  .satisfaction__container--biologia{
+    
+    margin-left: 47px;
+  }
+  
+  
+  .satisfaction__container--economia{
+    width: 140px;
+    margin-left: 70px;
+  }
+  
+  
+  .satisfaction__container--quimica{
+    margin-left: 69px;
+  }
+  
+  
+  .satisfaction__container--ecologia{
+    margin-left: 108px;
+  }
+  
+  
+  .satisfaction__container--ingieneria{
+    width: 160px;
+    margin-left: 56px;
+  }
+
+
+  .satisfaction__container--barras{
+    justify-content: space-around;
+  }
+  /* Sección  nivel de emociones*/
+
+  /* Sección comparativa */
+}
