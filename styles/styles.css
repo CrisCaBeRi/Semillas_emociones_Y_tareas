@@ -787,7 +787,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   /* Sección Header */
 
   /* Sección información estudiante */
@@ -795,9 +795,145 @@
   /* Sección nivel de aprobación con caras */
 
   /* Sección cursos */
+  .courses{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+    position: relative;
+  }
+  
+  
+  .courses__container{
+    display: flex;
+    animation: cambio 20s infinite;
+  }
+  
+  
+  @keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+  
+    25%{margin-left: 0%;}
+    45%{margin-left: 0%;}
+  
+    50%{margin-left: 0%;}
+    70%{margin-left: 0%;}
+  
+    75%{margin-left: 0%;}
+    100%{margin-left: 0%;}
+  }
 
+
+  .courses__container--cosas{
+    margin: 0 8px;
+  }
   /* Sección satisfacción por curso */
+  .satisfaction__container--title h2{
+    width: 33%;
+  }
+  .satisfaction__container--cien{
+    top: 19%;
+    left: 84px;
+    font-size: 25px;
+  }
+  
+  
+  .satisfaction__container--cincuenta{
+    top: 44%;
+    left: 84px;
+    font-size: 25px;
+  }
+  
+  .satisfaction__container--c{
+    top: 82%;
+    left: 84px;
+    font-size: 25px;
+  }
 
+
+  .satisfaction__container--textos{
+    margin-left: 40px;
+  }
+  
+  
+  .satisfaction__container--biologia{
+    margin-left: 24px;
+  }
+  
+  
+  .satisfaction__container--economia{
+    margin-left: 48px;
+  }
+  
+  
+  .satisfaction__container--quimica{
+    margin-left: 39px;
+  }
+  
+  
+  .satisfaction__container--ecologia{
+    margin-left: 52px;
+  }
+  
+  
+  .satisfaction__container--ingieneria{
+    width: 94px;
+    margin-left: 45px;
+  }
+
+
+  .satisfaction__container--barra1{
+    margin-left: 18px;
+  }
+
+
+  .satisfaction__container--barra1 div{
+    padding: 55px;
+  }
+
+
+  .satisfaction__container--barra2{
+    margin-left: 18px;
+  }
+
+  
+  .satisfaction__container--barra2 div{
+    padding: 55px;
+  }
+
+
+  .satisfaction__container--barra3{
+    margin-left: 27px;
+  }
+  
+  
+  .satisfaction__container--barra3 div{
+    padding: 55px;
+  }
+
+
+  .satisfaction__container--barra4{
+    margin-left: 18px;
+  }
+  
+  
+  .satisfaction__container--barra4 div{
+    padding: 55px;
+  }
+
+
+  .satisfaction__container--barra5{
+    margin-left: 18px;
+  }
+  
+  
+  .satisfaction__container--barra5 div{
+    padding: 55px;
+  }
   /* Sección  nivel de emociones*/
 
   /* Sección comparativa */
