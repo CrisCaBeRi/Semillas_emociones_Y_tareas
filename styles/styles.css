@@ -854,6 +854,11 @@
   100%{
     width: 63%;}
 /* Sección comparativa */
+<<<<<<< HEAD
+=======
+
+@media (min-width: 426px) {
+>>>>>>> 5b1eed2 (cambios guardados)
 }
 
 /*Este es mi corrección a esta resolucion*/
@@ -1117,4 +1122,23 @@
   /* Sección  nivel de emociones*/
 
   /* Sección comparativa */
+<<<<<<< HEAD
+=======
+}
+
+@media (min-width: 769px) {
+  /* Sección Header */ 
+  
+  /* Sección información estudiante */
+
+  /* Sección nivel de aprobación con caras */
+
+  /* Sección cursos */
+
+  /* Sección satisfacción por curso */
+
+  /* Sección  nivel de emociones*/
+
+  /* Sección comparativa */
+>>>>>>> 5b1eed2 (cambios guardados)
 }
