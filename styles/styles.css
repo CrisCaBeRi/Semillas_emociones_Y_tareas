@@ -1,14 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box;}
 
 /* Sección Header */
 
+.nav_container {    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;}
+
+.nav_item {
+  color: white;
+  text-decoration: none;}
+
+.nav_label {
+  width: 9vh;   
+  display: block;
+  cursor: pointer;}
+
+.nav_label hr{
+  border-radius: 5px;
+  padding-bottom: 3px;
+  background-color: white;
+  border-color: white;
+  margin-bottom: 7px;}
+
+.nav_menu {
+  z-index: 1;
+  position: fixed;
+  top: 80px;
+  bottom: 0px;
+  background-color: #009458;   
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  clip-path: circle(0 at center);
+  transition: 1s;
+  font-family: 'Dosis', sans-serif;  
+  font-size: 25px;}
+
+.nav_input {display: none;}
+
+.nav_input:checked + .nav_menu{
+  clip-path: circle(100% at center);}
+
+.hamburguesa {
+  padding: 10px 10px 10px 40px;
+  width: 100%;
+  background-color: #009458;
+  display: flex;
+  justify-content: space-between;}
+
+
 /* Sección información estudiante */
+.person {
+  margin: 0 2% 0 2%;
+  padding: 15px;
+  background-color: #d9efe6;
+  border-radius: 15px;
+  box-shadow: 0px 2px 2px 0px grey;}
+
+.container_ficha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
+
+.imagen_persona {
+  clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+  margin-bottom: 20px;} 
+.nombre_persona {
+  background-color: #009458;
+  border-radius: 15px;  
+  padding: 0 20px 0 20px;
+  text-align: center; 
+  margin-bottom: 20px;
+  color: white;}
+
+.person  {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200;
+  font-size: 16px;}
+
+.nombre_persona h2 {  
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200;}
+
+.informacion_estudiante { 
+  display: grid;
+  grid-template-columns: 55% 45% ; 
+  padding: 5px;
+  gap: 5px;
+  word-wrap: break-word;}
+
+.info_der {  
+  padding-top: 20px;}
+
+.informacion_estudiante h3 {
+  font-size: 16px;
+  margin-bottom: 15px;}
+
+.informacion_estudiante h4 {
+  font-size: 14px;
+  margin-bottom: 10px;}
+
+.informacion_estudiante p {  
+  font-size: 15px;}
 
 /* Sección nivel de aprobación con caras */
+
+.faces {
+  width: 100%;
+  height: 180px;  
+  border-radius: 15px;
+  box-shadow: 0px 2px 2px 0px grey;
+  display: flex;
+  justify-content: space-around;  
+  background-color: white;}
+
+.face1, .face2, .face3  {  
+  padding-top: 30px ;  
+  display: flex;
+  flex-direction: column;  
+  align-items: center;}
+
+.face1 {
+  padding-left: 10px;}
+
+.face3 {
+  padding-right: 10px;}
+
+.face2 {
+  padding-left: 15px;
+  padding-right: 15px;}
+
+#cara {   
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  border: solid 4px #009458;  
+  margin-bottom: 10px;}
+  
+.face1, .face2, .face3 {
+  transform: scale(var(--escala, 1));
+  transition: transform 0.25s;}
+
+.face1:hover, .face2:hover, .face3:hover  {
+  --escala: 1.1;
+  cursor:pointer;}
+
+.faces hr {   
+  margin-top: 10px;  
+  margin-bottom: 10px;  
+  border: 1px solid grey;}
+
+.ojos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;} 
+
+.ojo_i {
+  margin-top: 8px;
+  margin-left: 3px;
+  *margin: 8px 5px 0 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #009458;}
+
+.ojo_d {
+  margin-top: 8px;
+  margin-right: 3px;
+  *margin: 8px 0px 0 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #009458;}
+
+.boca {
+  transform: translate(50%, 100%);  
+  height: 10px;
+  width: 20px;
+  border-radius: 0 0 150px 150px ;
+  background-color: #009458;}
+
+.face1 h2{color: #009458;}
+
+.face2 #cara {
+  border: solid 4px #fab005;}
+
+.face2 .ojo_i {
+  background-color: #fab005;}
+
+.face2 .ojo_d {
+  background-color: #fab005;}
+
+.face2 .boca {
+  border-radius:   150px 150px 150px 150px ;
+  background-color: #fab005;
+  transform: translate(50%, 200%);
+  height: 5px;}
+
+.face2 h2 {color: #fab005;}
+
+.face3 #cara {
+  border: solid 4px red;}
+
+.face3 .ojo_i {
+  background-color: red;}
+
+.face3 .ojo_d {
+  background-color: red;}
+
+.face3 .boca {
+  border-radius:   150px 150px 0px 0px ;
+  background-color: red;
+  transform: translate(50%, 80%);
+  height: 10px;}
+
+.face3 h2 {color: red;}
+
+.faces p {  
+  font-size: 18px;
+  margin-top: 10px;}
 
 /* Sección cursos */
 
@@ -18,8 +237,43 @@
 
 /* Sección comparativa */
 
-@media (max-width: 768px) {
+@media (min-width: 426px) {
   /* Sección Header */
+  
+  .menu2 {
+    
+    display: grid;
+    grid-template-columns: 20% 80% ;
+    grid-template-rows: repeat(3, 30px);    
+    background-color: #009458;
+    padding: 15px;  }
+
+  .menu2 button {
+    border-radius: 15px;
+    width: 100px;
+    height: 35px; 
+    }
+
+    .botones button:first-of-type{
+      width: 8rem;
+    }
+
+   
+
+    
+    /*fila /columna/fila orden grid*/
+  .botones {
+    display: flex;
+    grid-area: 2/2/3/3;
+  }
+
+
+
+  
+
+
+
+
 
   /* Sección información estudiante */
 
@@ -34,9 +288,9 @@
   /* Sección comparativa */
 }
 
-@media (max-width: 425px) {
-  /* Sección Header */
-
+@media (min-width: 769px) {
+  /* Sección Header */ 
+  
   /* Sección información estudiante */
 
   /* Sección nivel de aprobación con caras */
