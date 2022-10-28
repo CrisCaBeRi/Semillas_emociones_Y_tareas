@@ -729,9 +729,8 @@
 
 /* Sección comparativa */
 
-<<<<<<< HEAD
 @media (min-width: 426px) {
-=======
+}
 
 /*Este es mi corrección a esta resolucion*/
 @media (max-width: 320px){
@@ -928,7 +927,6 @@
 
 
 @media (max-width: 1024px) {
->>>>>>> kevin
   /* Sección Header */
   
   .menu2 {
@@ -977,7 +975,6 @@
   /* Sección  nivel de emociones*/
 
   /* Sección comparativa */
-<<<<<<< HEAD
 }
 
 @media (min-width: 769px) {
@@ -995,6 +992,3 @@
 
   /* Sección comparativa */
 }
-=======
-}
->>>>>>> kevin
