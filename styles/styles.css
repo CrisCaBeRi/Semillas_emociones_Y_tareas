@@ -3,11 +3,15 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;}
+  box-sizing: border-box;
+}
+
 
 /* Sección Header */
+.menu2 {
+  display: none;}
 
-.nav_container {    
+.nav_container {
   display: flex;
   align-items: center;
   justify-content: space-between;}
@@ -17,11 +21,11 @@
   text-decoration: none;}
 
 .nav_label {
-  width: 9vh;   
+  width: 9vh;
   display: block;
   cursor: pointer;}
 
-.nav_label hr{
+.nav_label hr {
   border-radius: 5px;
   padding-bottom: 3px;
   background-color: white;
@@ -33,7 +37,7 @@
   position: fixed;
   top: 80px;
   bottom: 0px;
-  background-color: #009458;   
+  background-color: #009458;
   width: 100%;
   left: 0;
   display: flex;
@@ -42,12 +46,13 @@
   align-items: center;
   clip-path: circle(0 at center);
   transition: 1s;
-  font-family: 'Dosis', sans-serif;  
+  font-family: 'Dosis', sans-serif;
   font-size: 25px;}
 
-.nav_input {display: none;}
+.nav_input {
+  display: none;}
 
-.nav_input:checked + .nav_menu{
+.nav_input:checked+.nav_menu {
   clip-path: circle(100% at center);}
 
 .hamburguesa {
@@ -73,32 +78,33 @@
 
 .imagen_persona {
   clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
-  margin-bottom: 20px;} 
+  margin-bottom: 20px;}
+
 .nombre_persona {
   background-color: #009458;
-  border-radius: 15px;  
+  border-radius: 15px;
   padding: 0 20px 0 20px;
-  text-align: center; 
+  text-align: center;
   margin-bottom: 20px;
   color: white;}
 
-.person  {
+.person {
   font-family: 'Dosis', sans-serif;
   font-weight: 200;
   font-size: 16px;}
 
-.nombre_persona h2 {  
+.nombre_persona h2 {
   font-family: 'Dosis', sans-serif;
   font-weight: 200;}
 
-.informacion_estudiante { 
+.informacion_estudiante {
   display: grid;
-  grid-template-columns: 55% 45% ; 
+  grid-template-columns: 55% 45%;
   padding: 5px;
   gap: 5px;
   word-wrap: break-word;}
 
-.info_der {  
+.info_der {
   padding-top: 20px;}
 
 .informacion_estudiante h3 {
@@ -109,24 +115,26 @@
   font-size: 14px;
   margin-bottom: 10px;}
 
-.informacion_estudiante p {  
+.informacion_estudiante p {
   font-size: 15px;}
 
 /* Sección nivel de aprobación con caras */
 
 .faces {
   width: 100%;
-  height: 180px;  
+  height: 180px;
   border-radius: 15px;
   box-shadow: 0px 2px 2px 0px grey;
   display: flex;
-  justify-content: space-around;  
+  justify-content: space-around;
   background-color: white;}
 
-.face1, .face2, .face3  {  
-  padding-top: 30px ;  
+.face1,
+.face2,
+.face3 {
+  padding-top: 30px;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   align-items: center;}
 
 .face1 {
@@ -139,35 +147,38 @@
   padding-left: 15px;
   padding-right: 15px;}
 
-#cara {   
-  width:50px;
-  height:50px;
-  border-radius:50%;
-  border: solid 4px #009458;  
+#cara {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 4px #009458;
   margin-bottom: 10px;}
-  
-.face1, .face2, .face3 {
+
+.face1,
+.face2,
+.face3 {
   transform: scale(var(--escala, 1));
   transition: transform 0.25s;}
 
-.face1:hover, .face2:hover, .face3:hover  {
+.face1:hover,
+.face2:hover,
+.face3:hover {
   --escala: 1.1;
-  cursor:pointer;}
+  cursor: pointer;}
 
-.faces hr {   
-  margin-top: 10px;  
-  margin-bottom: 10px;  
+.faces hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: 1px solid grey;}
 
 .ojos {
   display: flex;
   align-items: center;
-  justify-content: space-around;} 
+  justify-content: space-around;}
 
 .ojo_i {
   margin-top: 8px;
   margin-left: 3px;
-  *margin: 8px 5px 0 10px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -175,21 +186,21 @@
 
 .ojo_d {
   margin-top: 8px;
-  margin-right: 3px;
-  *margin: 8px 0px 0 0;
+  margin-right: 3px;  
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #009458;}
 
 .boca {
-  transform: translate(50%, 100%);  
+  transform: translate(50%, 100%);
   height: 10px;
   width: 20px;
-  border-radius: 0 0 150px 150px ;
+  border-radius: 0 0 150px 150px;
   background-color: #009458;}
 
-.face1 h2{color: #009458;}
+.face1 h2 {
+  color: #009458;}
 
 .face2 #cara {
   border: solid 4px #fab005;}
@@ -201,12 +212,13 @@
   background-color: #fab005;}
 
 .face2 .boca {
-  border-radius:   150px 150px 150px 150px ;
+  border-radius: 150px 150px 150px 150px;
   background-color: #fab005;
   transform: translate(50%, 200%);
   height: 5px;}
 
-.face2 h2 {color: #fab005;}
+.face2 h2 {
+  color: #fab005;}
 
 .face3 #cara {
   border: solid 4px red;}
@@ -218,16 +230,20 @@
   background-color: red;}
 
 .face3 .boca {
-  border-radius:   150px 150px 0px 0px ;
+  border-radius: 150px 150px 0px 0px;
   background-color: red;
   transform: translate(50%, 80%);
   height: 10px;}
 
-.face3 h2 {color: red;}
+.face3 h2 {
+  color: red;}
 
-.faces p {  
+.faces p {
   font-size: 18px;
   margin-top: 10px;}
+
+.informacion_estudiante h2 {
+  display: none;}
 
 /* Sección cursos */
 
@@ -237,66 +253,127 @@
 
 /* Sección comparativa */
 
-@media (min-width: 426px) {
+@media (min-width: 425px) {
+
   /* Sección Header */
-  
+  header {
+    display: none;}
+
   .menu2 {
-    
-    display: grid;
-    grid-template-columns: 20% 80% ;
-    grid-template-rows: repeat(3, 30px);    
+    display: flex;
+    height: 80px;
     background-color: #009458;
-    padding: 15px;  }
+    padding: 10px;}
+
+  .imagen_headermenu {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 10px;}
+
+
+  .botones {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 50px;}
+
+  .botones button {
+    color: #009458;
+    font-size: 80%;
+    padding: 5px;}
 
   .menu2 button {
-    border-radius: 15px;
-    width: 100px;
-    height: 35px; 
-    }
+    border-radius: 35px;
+    height: 70%;
+    margin-right: 15px;}
 
-    .botones button:first-of-type{
-      width: 8rem;
-    }
+  button:nth-child(2),
+  button:nth-child(3) {
+    width: 28%;}
 
-    /*fila /columna/fila orden grid*/
-  .botones {
-    display: flex;
-    grid-area: 2/2/3/3;
-  }
+  button:nth-child(3) {
+    margin-right: 25px;}
 
+  .botones button:first-of-type {
+    width: 38%;}
 
 
-  
+  @media (min-width: 504px) and (max-width: 2560px) {
 
+    .botones button {
+      font-size: 100%;}
 
+    .person {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      padding: 20px 5px 10px 5px;}
 
+    .informacion_estudiante h2 {
+      display: flex;
+      font-size: 16px;}
 
+    /*Distribución tablet 504 hasta desktop*/
+    .container_ficha {
+      width: 40%;}
 
-  /* Sección información estudiante */
+    .informacion_estudiante {
+      display: flex;
+      flex-direction: column;
+      width: 30%;}
 
-  /* Sección nivel de aprobación con caras */
+    .faces {
+      padding: 5px;
+      margin: 10px 5px 5px 10px;
+      width: 25%;
+      height: 320px;
+      display: flex;
+      flex-direction: column;}
 
-  /* Sección cursos */
+    /*________________*/
 
-  /* Sección satisfacción por curso */
+    .person h4:first-of-type {
+      display: none;}
 
-  /* Sección  nivel de emociones*/
+    .imagen_persona {
+      width: 90%;}
 
-  /* Sección comparativa */
-}
+    .info_der {
+      padding-top: 0px;}
 
-@media (min-width: 769px) {
-  /* Sección Header */ 
-  
-  /* Sección información estudiante */
+    .face1,
+    .face2,
+    .face3 {
+      padding: 2px 0px 0px 0px;}
 
-  /* Sección nivel de aprobación con caras */
+    #cara {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 0px;}
 
-  /* Sección cursos */
+    .faces hr {
+      margin: 2px 0px 2px 0px;}
 
-  /* Sección satisfacción por curso */
+    .ojo_d,
+    .ojo_i {
+      width: 7px;
+      height: 7px;}
 
-  /* Sección  nivel de emociones*/
+    .boca {
+      transform: translate(100%, 100%);
+      height: 5px;
+      width: 10px;}
 
-  /* Sección comparativa */
+    .face2 .boca {
+      transform: translate(100%, 100%);
+      height: 5px;}
+
+    .face3 .boca {
+      transform: translate(100%, 50%);
+      height: 7px;}
+
+    .faces p {
+      margin-top: 0px;}
+  }  
 }
