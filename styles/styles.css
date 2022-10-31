@@ -64,6 +64,7 @@
 
 
 /* Sección información estudiante */
+
 .person {
   margin: 0 2% 0 2%;
   padding: 15px;
@@ -89,7 +90,7 @@
   color: white;}
 
 .main{
-  display: flex;
+  display: block;
 }
 
 .person {
@@ -1382,7 +1383,9 @@
   /* Sección información estudiante */
 
   /* Sección nivel de aprobación con caras */
-
+  .main{
+    display: flex;
+  }
   /* Sección cursos */
   .courses{
     width: 100%;
@@ -1552,7 +1555,9 @@
   /* Sección información estudiante */
 
   /* Sección nivel de aprobación con caras */
-
+  .main{
+    display: flex;
+  }
   /* Sección cursos */
   .courses{
     width: 100%;
@@ -1702,7 +1707,9 @@
   /* Sección Header */
 
   /* Sección información estudiante */
-
+  .main{
+    display: flex;
+  }
   /* Sección nivel de aprobación con caras */
 
   /* Sección cursos */
@@ -1835,7 +1842,9 @@
   /* Sección Header */
 
   /* Sección información estudiante */
-
+  .main{
+    display: flex;
+  }
   /* Sección nivel de aprobación con caras */
 
   /* Sección cursos */
