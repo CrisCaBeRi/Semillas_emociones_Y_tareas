@@ -15,26 +15,356 @@
 /* Sección satisfacción por curso */
 
 /* Sección  nivel de emociones*/
-
-/* Sección comparativa */
-
-@media (max-width: 768px) {
-  /* Sección Header */
-
-  /* Sección información estudiante */
-
-  /* Sección nivel de aprobación con caras */
-
-  /* Sección cursos */
-
-  /* Sección satisfacción por curso */
-
-  /* Sección  nivel de emociones*/
-
-  /* Sección comparativa */
+.containerEmotions{
+  width: 90%;
+  height: 80vh;
+  background-color: #d9efe7;
+  margin: 0% 5% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5%;
+  border-radius: 10px;
 }
 
-@media (max-width: 425px) {
+.container-title{
+  width: fit-content;
+  height: 60px;
+  border-radius: 15px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 5% 5% 0;
+  background: linear-gradient(30deg, #009458 90%, transparent 20%);
+  display: flex;
+  align-items: center;
+}
+
+.container-title p{
+  color: #fff;
+  padding: 15px 20px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1rem;
+}
+
+.emotion{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar{
+  width: 70%;
+  background: #D9D9D9;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.bar div{
+  position: relative;
+  width: 0;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.emotion p{
+  font-size: 0.9rem;
+  font-family: 'Dosis', sans-serif;
+}
+
+/* Animación */
+#barFelicidad{
+  background-color: #009458;
+  animation: felicidad-barra 5s forwards;
+}
+
+@keyframes felicidad-barra{
+  
+  100%{
+    width: 65%;
+  }
+}
+
+#barSorpresa{
+  background-color: #009458;
+  animation: sorpresa-barra 5s forwards;
+}
+
+@keyframes sorpresa-barra{
+  
+  100%{
+    width: 80%;
+  }
+}
+
+#barTristesa{
+  background-color: #DF0303;
+  animation: tristesa-barra 5s forwards;
+}
+
+@keyframes tristesa-barra{
+  
+  100%{
+    width: 10%;
+  }
+}
+
+#barEnojo{
+  background-color: #DF0303;
+  animation: enojo-barra 5s forwards;
+}
+
+@keyframes enojo-barra{
+  
+  100%{
+    width: 25%;
+  }
+}
+
+#barCuriosidad{
+  background-color: #DBDF03;
+  animation: curiosidad-barra 5s forwards;
+}
+
+@keyframes curiosidad-barra{
+  
+  100%{
+    width: 45%;
+  }
+}
+
+#barAsombro{
+  background-color: #009458;
+  animation: asombro-barra 5s forwards;
+}
+
+@keyframes asombro-barra{
+  
+  100%{
+    width: 75%;
+  }
+}
+
+#barIndiferencia{
+  background-color: #DF0303;
+  animation: indiferencia-barra 5s forwards;
+}
+
+@keyframes indiferencia-barra{
+  
+  100%{
+    width: 30%;
+  }
+}
+
+#barEntusiasmo{
+  background-color: #009458;
+  animation: entusiasmo-barra 5s forwards;
+}
+
+@keyframes entusiasmo-barra{
+  
+  100%{
+    width: 63%;
+  }
+}
+
+
+
+/* Sección comparativa */
+.containerComparative{
+  width: 90%;
+  height: 80vh;
+  background-color: #d9efe7;
+  margin: 0% 5% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+.card-emotions{
+  text-align: center;
+}
+
+.title-emotions{
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.4rem;
+  padding: 10px;
+}
+
+.max-container{
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.container-emotions{
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+
+.loader-emotions{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-emotions::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(233,17,17,1) 0%, rgba(236,230,4,1) 50%, rgba(59,213,16,1) 100%);
+  border-radius: 50%;
+}
+
+.loader-emotions::after{
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: #d9efe7;
+  border-radius: 50%;
+}
+
+.loader{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  border-top: 20px solid #c2c2c2;
+  border-left: 20px solid #c2c2c2;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  transform: rotate(45deg);
+  animation: rotar1 3s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes rotar1{
+  100%{
+    transform: rotate(198deg);
+  }
+}
+
+.cara{
+  width: 30px;
+  height: 30px;
+  border: 3px solid #00db2f;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 35px;
+  left: 80px;
+}
+
+.ojos{
+  width: 50%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ojo{
+  width: 30%;
+  height: 100%;
+  background: #00db2f;
+  border-radius: 50%;
+}
+
+.boca{
+  width: 50%;
+  height: 25%;
+  background: #00db2f;
+  border-radius: 0 0 50% 50%;
+}
+
+.container-emotions p{
+  position: absolute;
+  color: #000;
+  width: 100%;
+  bottom: 100px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Dosis', sans-serif;
+}
+
+.loader2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  border-top: 20px solid #c2c2c2;
+  border-left: 20px solid #c2c2c2;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  transform: rotate(45deg);
+  animation: rotar2 3s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes rotar2{
+  100%{
+    transform: rotate(108deg);
+  }
+}
+
+.cara2{
+  width: 30px;
+  height: 30px;
+  border: 3px solid #f86a00;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 35px;
+  left: 80px;
+}
+
+.ojos2{
+  width: 50%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ojo2{
+  width: 30%;
+  height: 100%;
+  background: #f86a00;
+  border-radius: 50%;
+}
+
+.boca2{
+  width: 50%;
+  height: 15%;
+  background: #f86a00;
+  
+}
+
+.containerComparative hr{
+  width: 90%;
+  border: px solid #D9D9D9;
+}
+
+@media (min-width: 425px) {
   /* Sección Header */
 
   /* Sección información estudiante */
@@ -48,4 +378,49 @@
   /* Sección  nivel de emociones*/
 
   /* Sección comparativa */
+  .card-emotions{
+    transform: scale(0.8);
+  }
+
+  .container-emotions-comparative{
+    display: flex;
+  }
+
+  .emotions, .comparative{
+    width: 50%;
+  }
+
+  .emotion{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bar{
+    width: 100%;
+    height: 16px;
+    margin: 5px 0;
+  }
+
+
+
+}
+
+@media (min-width: 768px) {
+  /* Sección Header */
+
+  /* Sección información estudiante */
+
+  /* Sección nivel de aprobación con caras */
+
+  /* Sección cursos */
+
+  /* Sección satisfacción por curso */
+
+  /* Sección  nivel de emociones*/
+
+  /* Sección comparativa */
+  .container-emotions-comparative{
+    width: 50%;
+  }
+  
 }
