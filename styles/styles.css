@@ -379,7 +379,7 @@
 
 
 .courses__information--mini-barra{
-  animation: biologia-barra 2s forwards;
+  animation: biologia-barra 20s forwards;
 }
 
 
@@ -412,7 +412,7 @@
 
 
 .courses__information--mini-barra2{
-  animation: quimica-barra 2s forwards;
+  animation: quimica-barra 20s forwards;
 }
 
 
@@ -445,7 +445,7 @@
 
 
 .courses__information--mini-barra3{
-  animation: economia-barra 2s forwards;
+  animation: economia-barra 20s forwards;
 }
 
 
@@ -601,7 +601,7 @@
 
 
 .satisfaction__container--mini-barra1{
-  animation: barra1 2s forwards;
+  animation: barra1 20s forwards;
 }
 
 
@@ -631,7 +631,7 @@
 
 
 .satisfaction__container--mini-barra2{
-  animation: barra2 2s forwards;
+  animation: barra2 20s forwards;
 }
 
 
@@ -661,7 +661,7 @@
 
 
 .satisfaction__container--mini-barra3{
-  animation: barra3 2s forwards;
+  animation: barra3 20s forwards;
 }
 
 
@@ -691,7 +691,7 @@
 
 
 .satisfaction__container--mini-barra4{
-  animation: barra4 2s forwards;
+  animation: barra4 20s forwards;
 }
 
 
@@ -721,7 +721,7 @@
 
 
 .satisfaction__container--mini-barra5{
-  animation: barra5 2s forwards;
+  animation: barra5 20s forwards;
 }
 
 
@@ -839,7 +839,7 @@
 /* Animación */
 #barFelicidad{
   background-color: #009458;
-  animation: felicidad-barra 5s forwards;
+  animation: felicidad-barra 15s forwards;
 }
 
 @keyframes felicidad-barra{
@@ -851,7 +851,7 @@
 
 #barSorpresa{
   background-color: #009458;
-  animation: sorpresa-barra 5s forwards;
+  animation: sorpresa-barra 15s forwards;
 }
 
 @keyframes sorpresa-barra{
@@ -863,7 +863,7 @@
 
 #barTristesa{
   background-color: #DF0303;
-  animation: tristesa-barra 5s forwards;
+  animation: tristesa-barra 15s forwards;
 }
 
 @keyframes tristesa-barra{
@@ -875,7 +875,7 @@
 
 #barEnojo{
   background-color: #DF0303;
-  animation: enojo-barra 5s forwards;
+  animation: enojo-barra 15s forwards;
 }
 
 @keyframes enojo-barra{
@@ -887,7 +887,7 @@
 
 #barCuriosidad{
   background-color: #DBDF03;
-  animation: curiosidad-barra 5s forwards;
+  animation: curiosidad-barra 15s forwards;
 }
 
 @keyframes curiosidad-barra{
@@ -899,7 +899,7 @@
 
 #barAsombro{
   background-color: #009458;
-  animation: asombro-barra 5s forwards;
+  animation: asombro-barra 15s forwards;
 }
 
 @keyframes asombro-barra{
@@ -911,7 +911,7 @@
 
 #barIndiferencia{
   background-color: #DF0303;
-  animation: indiferencia-barra 5s forwards;
+  animation: indiferencia-barra 15s forwards;
 }
 
 @keyframes indiferencia-barra{
@@ -923,7 +923,7 @@
 
 #barEntusiasmo{
   background-color: #009458;
-  animation: entusiasmo-barra 5s forwards;
+  animation: entusiasmo-barra 15s forwards;
 }
 
 @keyframes entusiasmo-barra{
@@ -1008,7 +1008,7 @@
   border-right: 20px solid transparent;
   border-bottom: 20px solid transparent;
   transform: rotate(45deg);
-  animation: rotar1 3s linear forwards;
+  animation: rotar1 15s linear forwards;
   animation-delay: 1s;
 }
 
@@ -1074,7 +1074,7 @@
   border-right: 20px solid transparent;
   border-bottom: 20px solid transparent;
   transform: rotate(45deg);
-  animation: rotar2 3s linear forwards;
+  animation: rotar2 15s linear forwards;
   animation-delay: 1s;
 }
 
@@ -1127,7 +1127,7 @@
 @media (max-width: 320px){
   .courses{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1158,6 +1158,9 @@
     100%{margin-left: 223%;}
   }
 
+  .satisfaction{
+    height: 89vh;
+  }
 
   .satisfaction__container--title h2{
     font-size: 16px;
