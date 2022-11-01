@@ -674,4 +674,196 @@ Página realizada con HTML y Css utilizando el IDE Visual Studio Code.
 ```
 
 > * Ya para las barras verticales y darle posicionamiento de lineas, textos y barras, tuve que darle un ancho al padre de 100% "satisfaction", para que despues al hijo del hijo otro ancho de 70% para las barras "satisfaction__container--barras" y darle un "position: absolute", para darle libertad en moverse y poder ubicarlo.
+              
+## Emotions: 
+```bash
+<div class="emotions">
+    <div class="container-title">
+        <p>Emociones respecto al diplomado</p>
+    </div>
+    <div class="containerEmotions">
+        <div class="emotion">
+            <p>Felicidad</p>
+            <div class="bar">
+                <div id="barFelicidad"></div>
+            </div>
+        </div>
+        <div class="emotion">
+            <p>Sorpresa</p>
+            <div class="bar">
+                <div id="barSorpresa"></div>
+            </div>
+        </div>
+        <div class="emotion">
+            <p>Tristeza</p>
+            <div class="bar">
+                <div id="barTristesa"></div>
+            </div>
+        </div>
+        <div class="emotion">
+            <p>Enojo</p>
+            <div class="bar">
+                <div id="barEnojo"></div>
+            </div>
+        </div>
+        <div class="emotion">
+            <p>Cusiosidad</p>
+            <div class="bar">
+                <div id="barCuriosidad"></div>
+            </div>
+        </div>
+        <div class="emotion">
+            <p>Asombro</p>
+            <div class="bar">
+                <div id="barAsombro"></div>
+            </div>
+        </div>
+        <div class="emotion">
+            <p>Indiferencia</p>
+            <div class="bar">
+                <div id="barIndiferencia"></div>
+            </div>
+        </div>
+        <div class="emotion">
+            <p>Entusiasmo</p>
+            <div class="bar">
+                <div id="barEntusiasmo"></div>
+             </div>
+        </div>
+    </div>
+</div>
+```
+> ## *Nota*
+> * Se crea un contenedor que el cual albergara el titulo de la sección, esta también será usada para la sección comparative.              
+> * Se crea un contenedor en el cual ira el titulo de cada emoción y la barra que se llenara, indicando el porcentaje. 
+> * Para cada barra de progreso creamos un contenedor con un id, este nos permitirá manejar el porcentaje de cada barra de manera individual.  
 
+## CSS Emotions 
+```bash
+.containerEmotions{
+    width: 90%;
+    height: 80vh;
+    background-color: #d9efe7;
+    margin: 0% 5% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5%;
+    border-radius: 10px;
+  }
+
+  .container-title{
+    width: fit-content;
+    height: 60px;
+    border-radius: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 5% 5% 0;
+    background: linear-gradient(30deg, #009458 90%, transparent 20%);
+    display: flex;
+    align-items: center;
+  }
+
+  .container-title p{
+    color: #fff;
+    padding: 15px 20px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .emotion{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bar{
+    width: 70%;
+    background: #D9D9D9;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .bar div{
+    position: relative;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .emotion p{
+    font-size: 0.9rem;
+    font-family: 'Dosis', sans-serif;
+  }
+  
+  /* Animación */
+  #barFelicidad{
+    background-color: #009458;
+    animation: felicidad-barra 5s forwards;
+  }
+  
+  @keyframes felicidad-barra{
+    
+    100%{
+      width: 65%;
+    }
+  }
+```
+              
+> ## *Nota*
+> * Creamos un contenedor que contendrá las diferentes emociones.
+> * Se crean los estilos del contenedor del título, al igual que los diseños del texto que tendrá el título.
+> * Se crea un contenedor para la barra y dentro de este otro div con un widh del cero por ciento, el cual servirá para dar la animación. Luego por medio del div creamos la animación dando un porcentaje fijo en la animación, el cual corresponderá al porcentaje propio de la emoción.
+              
+## Emotions: 
+```bash            
+<div class="comparative">
+    <div class="container-title">
+        <p>Comparativa</p>
+    </div>
+    <div class="containerComparative">
+        <div class="card-emotions">
+            <p class="title-emotions">Estudiante</p>  
+            <div class="max-container">
+                <div class="container-emotions">
+                    <div class="loader-emotions"></div>
+                    <div class="loader"></div>
+                    <div class="cara">
+                        <div class="ojos">
+                            <div class="ojo"></div>
+                            <div class="ojo"></div>
+                        </div>
+                        <div class="boca"></div>
+                    </div>
+                    <p>85%</p> 
+                </div>                       
+            </div>
+        </div>
+        <hr>
+        <div class="card-emotions">
+            <p class="title-emotions">Otros estudiantes</p>  
+            <div class="max-container">
+                <div class="container-emotions">
+                    <div class="loader-emotions"></div>
+                    <div class="loader2"></div>
+                    <div class="cara2">
+                        <div class="ojos2">
+                            <div class="ojo2"></div>
+                            <div class="ojo2"></div>
+                        </div>
+                        <div class="boca2"></div>
+                    </div>
+                    <p>35%</p> 
+                </div>                       
+            </div>
+        </div>             
+    </div>   
+</div>
+```    
+              
+> ## *Nota*
+> * Creamos un contenedor que tendrá todo el contenido de la sección, dentro de este pondremos un contenedor para el titulo y otro que tendrá las gráficas dentro de si.
+> * Dentro del div que llevará las graficas pondremos el titulo de la grafica y un contenedor que tendrá el grafico. Dentro del contenedor que para el grafico tendremos diferentes divs los cuales servirán para el borde degradado de la gráfica, otro servirá para el circulo interno de la gráfica donde también se vera la información y finalmente tendremos un div al cual le daremos bordes redondeados y realizaremos una animación sobre este para dar el efecto de carga.
+              
