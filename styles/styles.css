@@ -259,7 +259,7 @@
   align-items: center;
   flex-direction: column;
   margin: 40px 0 0 0;
-  overflow: scroll;
+  overflow: hidden;
   position: relative;
 }
 
