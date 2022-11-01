@@ -674,3 +674,4 @@ Página realizada con HTML y Css utilizando el IDE Visual Studio Code.
 ```
 
 > * Ya para las barras verticales y darle posicionamiento de lineas, textos y barras, tuve que darle un ancho al padre de 100% "satisfaction", para que despues al hijo del hijo otro ancho de 70% para las barras "satisfaction__container--barras" y darle un "position: absolute", para darle libertad en moverse y poder ubicarlo.
+
